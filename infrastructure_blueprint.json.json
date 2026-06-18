@@ -1,0 +1,27 @@
+{
+    "OrchestrationTime": "2026-06-18 12:27:43",
+    "NetworkTopology": {
+        "VPC_CIDR": "10.0.0.0/16",
+        "ActiveSubnets": [
+            "10.0.1.0/24",
+            "10.0.2.0/24"
+        ]
+    },
+    "DeployedAssets": [
+        {
+            "name": "Prod-Web-Server-01",
+            "type": "t3.medium",
+            "zone": "Public",
+            "ip": "10.0.1.45",
+            "status": "RUNNING"
+        },
+        {
+            "name": "Prod-DB-Replica-01",
+            "type": "r6i.xlarge",
+            "zone": "Private",
+            "ip": "10.0.2.110",
+            "status": "RUNNING"
+        }
+    ],
+    "SecurityHardening": "ENABLED"
+}
